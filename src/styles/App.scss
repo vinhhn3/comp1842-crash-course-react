@@ -1,0 +1,70 @@
+$primary-color: #3498db;
+$completed-color: #95a5a6;
+
+.app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.todo-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: $primary-color;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+
+  .todo-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+
+    &.completed {
+      color: $completed-color;
+      text-decoration: line-through;
+    }
+
+    input {
+      margin-right: 10px;
+    }
+
+    button {
+      margin-left: auto;
+      background: none;
+      border: none;
+      color: red;
+      cursor: pointer;
+    }
+  }
+}
