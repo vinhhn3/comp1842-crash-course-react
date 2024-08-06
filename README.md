@@ -1,3 +1,5 @@
+# SCSS Crash Course
+
 Here’s a crash course on SCSS (Sassy CSS), which is a popular CSS preprocessor that adds powerful features to CSS. We’ll cover the following topics:
 
 1. **Introduction to SCSS**
